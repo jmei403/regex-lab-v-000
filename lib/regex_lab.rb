@@ -19,7 +19,7 @@ def words_five_letters_long(text)
   matches = []
 
   words.each do |word|
-    matches << word if !word.match(/\w{5}$/).nil?
+    matches << word if !word.match(/^\w{5}$/).nil?
   end
   matches
 end
